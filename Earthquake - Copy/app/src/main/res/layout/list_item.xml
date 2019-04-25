@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/Magnitude_TextView"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/magnitude_circle_shape"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="7.4"
+        android:layout_gravity="center_vertical"
+
+
+        />
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+    <TextView
+        android:id="@+id/OffsetLocation_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12sp"
+        android:text="offset"
+        />
+
+    <TextView
+        android:id="@+id/PrimaryLocation_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorEarthquakeLocation"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:text="primary"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/Date_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12sp"
+        android:text="Date"
+        />
+
+    <TextView
+        android:id="@+id/Time_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12sp"
+        android:text="time"
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@color/colorImage"
+    android:minHeight="88dp"
+
+    >
+
+    <!-- Image Icon -->
+    <ImageView
+        android:id="@+id/Icon_ImageView"
+        android:layout_width="88dp"
+        android:layout_height="88dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/Icon_ImageView"
+        android:id="@+id/Background_TextView"
+        android:paddingLeft="16dp">
+        <!--  Miwok   -->
+        <TextView
+            android:id="@+id/Miwok_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="lutti"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="bottom"/>
+
+
+        <!--  English(Default)  -->
+        <TextView
+            android:id="@+id/Default_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            tools:text="one"
+            android:layout_below="@id/Miwok_TextView"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="top" />
+
+    </RelativeLayout>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/icon"/>
+</RelativeLayout>
